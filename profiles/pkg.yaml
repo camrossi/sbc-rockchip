@@ -1,6 +1,8 @@
 name: profiles
 variant: scratch
 finalize:
+  - from: /pkg/friendlyelec-cm3588-nas
+    to: /rootfs/profiles
   - from: /pkg/helios64
     to: /rootfs/profiles
   - from: /pkg/nanopi-r5s
@@ -36,6 +38,8 @@ finalize:
   - from: /pkg/rock5a
     to: /rootfs/profiles
   - from: /pkg/rock5b
+    to: /rootfs/profiles
+  - from: /pkg/rock5b-plus
     to: /rootfs/profiles
   - from: /pkg/rock5t
     to: /rootfs/profiles
